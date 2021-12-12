@@ -1,18 +1,45 @@
 .home {
+  background-color: #282c34;
+
   .home-header {
-    background-color: #282c34;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    gap: 1rem;
+    padding-top: 1rem;
+    max-width: 60%;
+    margin: 0 auto;
   }
 
-  .picture-container {
+  .spinner-container {
     height: 60vmin;
     display: flex;
+    align-items: center;
+  }
+
+  .action-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0 1rem;
+
+    &-left,
+    &-right {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+
+  .action-btn {
+    width: 6rem;
+    height: 2.5rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 }

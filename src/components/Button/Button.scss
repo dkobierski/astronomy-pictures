@@ -1,0 +1,19 @@
+@import 'styles/variables';
+
+.button {
+  background-color: $colorPrimary;
+  padding: 0.75rem 1.25em;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: $white;
+
+  &:hover {
+    background-color: $colorPrimaryDark;
+  }
+
+  &:disabled {
+    background-color: $spanishGray;
+    color: $brightGray;
+  }
+}
