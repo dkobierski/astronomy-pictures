@@ -1,7 +1,7 @@
 # App showing astronomy pictures
 
 App written for interview purposes.
-It lacks error handling, 18n, tests etc.
+It lacks error handling, i18n, tests etc.
 
 ## Getting started
 
