@@ -1,37 +1,28 @@
-.home {
-  background-color: #282c34;
+@import 'styles/mixins/breakpoints';
 
-  .home-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    gap: 1rem;
-    padding-top: 1rem;
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+
+  @include respond-from(m) {
     max-width: 60%;
-    margin: 0 auto;
+  }
+
+  .picture-date {
+    margin: 0;
   }
 
   .spinner-container {
     height: 60vmin;
     display: flex;
     align-items: center;
-  }
-
-  .action-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0 1rem;
-
-    &-left,
-    &-right {
-      display: flex;
-      gap: 0.5rem;
-    }
   }
 
   .action-btn {
@@ -41,5 +32,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .picture-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .picture-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .picture-description {
+    font-size: 0.9rem;
+    text-align: justify;
   }
 }

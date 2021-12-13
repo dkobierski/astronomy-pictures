@@ -9,11 +9,12 @@
   color: $white;
 
   &:hover {
-    background-color: $colorPrimaryDark;
+    background-color: $colorPrimaryLighter;
   }
 
   &:disabled {
     background-color: $spanishGray;
     color: $brightGray;
+    cursor: not-allowed;
   }
 }

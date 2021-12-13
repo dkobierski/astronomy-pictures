@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+.navigation {
+  .list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .item {
+    padding: 1rem 0;
+
+    &:not(:last-of-type)::after {
+      content: '|';
+      margin-left: 1rem;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    color: $white;
+  }
+}
