@@ -11,7 +11,7 @@ type AstronomyPictureProps = {
 const AstronomyPicture = ({ className, picture }: AstronomyPictureProps) => {
   if (!picture) return null;
 
-  return picture.mediaType === 'image' ? (
+  return picture.media_type === 'image' ? (
     <img
       src={picture.url}
       className={cn('astronomy-picture', className)}

@@ -3,8 +3,8 @@ export type NasaPicture = {
   date: Date;
   explanation: string;
   hdurl: string;
-  mediaType: 'image' | 'video';
-  serviceVersion: string;
+  media_type: 'image' | 'video';
+  service_version: string;
   title: string;
   url: string;
 };
